@@ -1,0 +1,521 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.banner{
+    width:100%;
+    height:120vh;
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0, 0, 0, 0.15)),url(image_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:93%;
+    margin:auto;
+    padding: 13px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+.logo:hover{
+    transform: rotateZ(180deg);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height:2px;
+    width: 0;
+    background:#FDAF75;
+    position: absolute;
+    left:0;
+    bottom:-4px;
+    transition:0.4s; 
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.content-home{
+    width: 100%;
+    position:absolute;
+    top:30%;
+    transform:translateY(-50%);
+    margin-top:30px;
+    text-align:left;
+    margin-left: 50px;
+    color:#fff;
+}
+.content-home h1{
+    font-size:50px;
+    margin-top: 80px;
+    
+    
+}
+.content-home p{
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 20px;
+    
+}
+button{
+    width: 220px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #eba976;
+    background: transparent;
+    margin-left: -5px;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position:relative;
+}
+span{
+    background: #eba976;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.wave{
+    position: absolute;
+    left: 0;
+    bottom: -143px;
+}
+
+
+/* Css file of menu is starting from here */
+
+.food-menu-heading{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    color: #f5954b;
+    text-transform: uppercase;
+}
+
+
+.sec1{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.food-menu-container .food-menu-item .food-image img{
+    display: block;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    box-shadow: 15px 17px 35px 0 rgba(0,0,0,0.9); 
+    float: left;
+    margin: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.food-menu-container .food-menu-item{
+    background-color: #fff;
+    box-shadow: 15px 17px 35px 0 rgba(0,0,0,0.9); 
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.food-description{
+    float: right;
+    margin: 15px;
+    display: flow-root;
+}
+
+.food-description h2{
+    margin-top: 10px;
+    margin-bottom: 35px;
+    display: block;
+    font-size: 30px;
+}
+.food-description p{
+    margin: 35px 0;
+    display: block;
+    font-size: 25px;
+}
+.food-description .food-price{
+    margin: 35px 0;
+    display: block;
+    font-size: 23px;
+}
+
+.food-title{
+    font-size: 29px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration:none;
+    color: #f5954b;
+    font-weight: 466;
+    text-transform: capitalize;
+}
+
+.food-description p{
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.647);
+    text-shadow: 5cm #000;
+    font-weight: 600;
+}
+
+.food-description .food-price{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #28b3d6;
+    font-weight: 800;
+}
+
+/* Chefs section started from here */
+
+#chef{
+    padding: 25px 10px 25px 10px;
+}
+.chef-section_text{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f5954b;
+    font-weight: 150;
+}
+.sub_text{
+    color: #ff6f00;
+    font-weight: 120;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.para{
+    color: #f5954b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    
+}
+.chef-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.chef-container .box{
+    margin: 15px;
+    position: relative;
+    box-shadow: 15px 17px 35px 0 rgba(0,0,0,0.5);
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 440px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.chef-container .box:hover{
+    z-index: 1;
+    transform: scale(1.20);
+}
+.chef-container .box .imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.chef-container .box .imgbox::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg,#f5954b,#000);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.chef-container .box:hover .imgbox::before{
+    opacity: 1;
+}
+.chef-container .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.chef-container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+}
+.chef-container .box .content .sub_text{
+    margin-bottom :5px;
+    font-size: 20px;
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+.chef-container .box:hover .content .sub_text{
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.chef-container .box .content .para{
+    font-size: 15px;
+    transition: 0.5s;
+    padding: 5px;
+    transform: translateY(200px);
+}
+.chef-container .box:hover .content .para{
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+/* Rating section is started from here */
+
+.rating-container
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(backgroun_review.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.rating-container h2
+{
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #f5954b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.name{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ec6c0a;
+    font-size: 21px;
+}
+
+.rating-container .experience
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #000;
+    box-shadow: 15px 17px 35px 0 rgba(0,0,0,0.9);
+    padding:3px 45px;
+}
+.rating-container .experience h3
+{
+    min-width: 180px;
+    text-align: right;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+}
+.rating-container .experience .rating
+{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row-reverse;
+}
+.rating-container .experience .rating input
+{
+    position: relative;
+    width: 20px;
+    height: 40px;
+    margin-right: 8px;
+    outline: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.rating-container .experience .rating input::before
+{
+    content: "\f005";
+    position:absolute;
+    font-family: fontAwesome;
+    font-size: 54px;
+    position: absolute;
+    color:white;
+    transition: 0.5s;
+}
+.rating-container .experience .rating input:nth-child(2n+1)::after
+{
+    right: 4px;
+    left: initial;
+    
+}
+.rating-container .experience .rating input:hover ~ input::before,
+.rating-container .experience .rating input:hover::before,
+.rating-container .experience .rating input:checked ~ input::before,
+.rating-container .experience .rating input:checked::before
+{
+    color:#ecac46;
+}
+
+/* Health tips section is started from here  */
+.health-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(health_back.png);
+    background-size: cover;
+    background-position: center;
+}
+.health-container .heading{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f5954b;
+    font-weight: 150;
+    margin: 20px;
+    text-transform: uppercase;
+}
+.health-container .content{
+    float: left;
+    margin-top: 45px;
+    margin-left: 65px;
+    display: block;
+}
+.health-container .content li{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 31px;
+    line-height: 50px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.647);
+}
+
+/* About us section is started from here */
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1ac77;
+
+}
+.container-about{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    color: #000;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    box-shadow: 15px 17px 35px 0 rgba(0,0,0,0.5);
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color:#5d5d5d;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 130;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+.content-section .content .button{
+    margin-top: 30px;
+}
+.content-section .content .button a{
+    background-color: #FF8C32;
+    padding: 12px 40px;
+    text-decoration: none;
+    box-shadow: 12px 15px 55px 0 rgba(0,0,0,0.5);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.05cm;
+    transition: 0.5s;
+}
+.content-section .content .button a:hover{
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
+    background-color: #f1ac77;
+}
+.content-section .social{
+    margin: 40px 40px;
+}
+.content-section .social ion-icon{
+    color: #000;
+    font-size: 30px;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.content-section .social ion-icon:hover{
+    color:#fff;
+}
+
+
+
